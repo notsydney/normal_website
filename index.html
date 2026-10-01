@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sydney | Technology & Engineering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <h2 class="logo">Sydney.</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="#contact">Contact</a>
+            <button onclick="darkMode()">🌙</button>
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">WELCOME TO MY WEBSITE</p>
+
+            <h1>Hi, I'm <span>Sydney</span>.</h1>
+
+            <h2>I love technology, coding and engineering.</h2>
+
+            <p>
+                I'm learning how to build websites, create Python
+                programs and explore engineering.
+            </p>
+
+            <div class="buttons">
+
+                <a href="projects.html" class="main-button">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="second-button">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="https://picsum.photos/500/500" alt="Technology">
+
+        </div>
+
+    </section>
+
+
+    <section class="features">
+
+        <h2>What I'm Interested In</h2>
+
+        <div class="feature-container">
+
+            <div class="feature">
+                <div class="icon">💻</div>
+                <h3>Coding</h3>
+                <p>Learning Python, HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">⚙️</div>
+                <h3>Engineering</h3>
+                <p>Exploring engineering and how technology works.</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">🌐</div>
+                <h3>Web Development</h3>
+                <p>Creating websites and learning how the web works.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <h2>Get In Touch</h2>
+
+        <p>Want to send me a message?</p>
+
+        <form onsubmit="sendMessage(event)">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Sydney. All rights reserved.</p>
+
+    </footer>
+
+
+    <script>
+
+        function darkMode() {
+
+            document.body.classList.toggle("dark");
+
+        }
+
+
+        function sendMessage(event) {
+
+            event.preventDefault();
+
+            alert("Thanks for your message!");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

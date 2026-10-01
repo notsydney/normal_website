@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sydney | Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <h2 class="logo">Sydney.</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html#contact">Contact</a>
+            <button onclick="darkMode()">🌙</button>
+        </div>
+
+    </nav>
+
+
+    <section class="page">
+
+        <p class="small-title">MY WORK</p>
+
+        <h1>My Projects</h1>
+
+        <p>
+            Here are some of the things I've been working on.
+        </p>
+
+
+        <div class="projects">
+
+
+            <div class="project-card">
+
+                <div class="project-image">🐍</div>
+
+                <div class="project-content">
+
+                    <h2>Python Programs</h2>
+
+                    <p>
+                        I've created different Python programs
+                        while learning programming.
+                    </p>
+
+                    <button onclick="projectMessage('Python')">
+                        View Project
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-image">🌐</div>
+
+                <div class="project-content">
+
+                    <h2>My Website</h2>
+
+                    <p>
+                        A website created using HTML, CSS
+                        and JavaScript.
+                    </p>
+
+                    <button onclick="projectMessage('Website')">
+                        View Project
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-image">⚙️</div>
+
+                <div class="project-content">
+
+                    <h2>Engineering</h2>
+
+                    <p>
+                        Projects exploring engineering,
+                        technology and systems.
+                    </p>
+
+                    <button onclick="projectMessage('Engineering')">
+                        View Project
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Sydney. All rights reserved.</p>
+
+    </footer>
+
+
+    <script>
+
+        function darkMode() {
+
+            document.body.classList.toggle("dark");
+
+        }
+
+
+        function projectMessage(project) {
+
+            alert("You selected the " + project + " project!");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
